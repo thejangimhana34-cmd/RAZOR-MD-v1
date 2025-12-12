@@ -166,9 +166,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '👻 𝐂𝙾𝙽𝙽𝙴𝙲𝚃 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+        '👻 𝕔𝕠𝕟𝕟𝕖𝕔𝕥 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖 𝕓𝕠𝕥 👻',
         `📞 Number: ${number}\n🩵 Status: Connected`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕'
     );
 
     for (const admin of admins) {
@@ -191,7 +191,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕'
     );
 
     try {
@@ -302,7 +302,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+            '𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕'
         );
 
         try {
@@ -466,8 +466,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 
 🔢 Your Number: ${number}
 
-*▫️SULA-MD Main Website 🌐*
-> https://sula-md.pages.dev
+*▫️𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 🌐*
 `;
 
     const templateButtons = [
@@ -493,17 +492,17 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
                     title: 'Click Here ❏',
                     sections: [
                         {
-                            title: `𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃`,
+                            title: `𝕣𝕒𝕫𝕠𝕣 𝕞𝕕`,
                             highlight_label: '',
                             rows: [
                                 {
                                     title: 'MENU 📌',
-                                    description: '𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳',
+                                    description: '𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕',
                                     id: `${config.PREFIX}menu`,
                                 },
                                 {
                                     title: 'OWNER 📌',
-                                    description: '𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳',
+                                    description: '𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕',
                                     id: `${config.PREFIX}owner`,
                                 },
                             ],
@@ -553,17 +552,17 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
                     title: 'Click Here ❏',
                     sections: [
                         {
-                            title: `𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃`,
+                            title: `𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥`,
                             highlight_label: '',
                             rows: [
                                 {
                                     title: 'CHECK BOT STATUS',
-                                    description: '𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳',
+                                    description: '𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕',
                                     id: `${config.PREFIX}alive`,
                                 },
                                 {
                                     title: 'OWNER NUMBER',
-                                    description: '𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳',
+                                    description: '𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥',
                                     id: `${config.PREFIX}owner`,
                                 },
                             ],
@@ -594,9 +593,10 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 
                 break;
 		        case 'owner': {
-    const ownerNumber = '+94760663483';
-    const ownerName = '𝐒𝐔𝐋𝐀𝐊𝐒𝐇𝐀 𝐌𝐀𝐃𝐀𝐑𝐀';
-    const organization = '*𝐒𝐔𝐋𝐀-𝐌𝐃* WHATSAPP BOT DEVALOPER 🍬';
+    const ownerNumber = '+94789649637
+';
+    const ownerName = '𝕋𝕙𝕖𝕛𝕒𝕟𝕘𝕚𝕞𝕙𝕒𝕟𝕒';
+    const organization = '*RAZOR MD* WHATSAPP BOT DEVALOPER 🍬';
 
     const vcard = 'BEGIN:VCARD\n' +
                   'VERSION:3.0\n' +
@@ -616,7 +616,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 
         // Then send message with reference
         await socket.sendMessage(from, {
-            text: `*SULA-MD OWNER*\n\n👤 Name: ${ownerName}\n📞 Number: ${ownerNumber}\n\n> 𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳`,
+            text: `*SULA-MD OWNER*\n\n👤 Name: ${ownerName}\n📞 Number: ${ownerNumber}\n\n> 𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕`,
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`],
                 quotedMessageId: sent.key.id
@@ -674,7 +674,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
     // Send the image
     await socket.sendMessage(sender, {
       image: imageBuffer,
-      caption: `🧠 *SULA-MD AI IMAGE*\n\n📌 Prompt: ${prompt}`
+      caption: `🧠 *RAZOR-MD AI IMAGE*\n\n📌 Prompt: ${prompt}`
     }, { quoted: msg });
 
   } catch (err) {
@@ -700,7 +700,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 
   if (!text) {
     return await socket.sendMessage(sender, {
-      text: "❎ *Please provide text to convert into fancy fonts.*\n\n📌 *Example:* `.fancy Sula`"
+      text: "❎ *Please provide text to convert into fancy fonts.*\n\n📌 *Example:* `.fancy RAZOR`"
     });
   }
 
@@ -719,7 +719,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
       .map(font => `*${font.name}:*\n${font.result}`)
       .join("\n\n");
 
-    const finalMessage = `🎨 *Fancy Fonts Converter*\n\n${fontList}\n\n_𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳_`;
+    const finalMessage = `🎨 *Fancy Fonts Converter*\n\n${fontList}\n\n_𝕡𝕠𝕨𝕖𝕣𝕕 𝕓𝕪 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕_`;
 
     await socket.sendMessage(sender, {
       text: finalMessage
@@ -895,10 +895,10 @@ Emoji පමණක් එනවානම්, emoji වලින්ම seductive 
 Mood එකට match වෙන්න style එක adjust කරන්න – sad, flirty, horny, soft, playful.
 
 "කව්ද ඔයා" කියනවා නම්:  
-👉 "මම 𝐒𝐔𝐋𝐀 𝐀𝐈… 🤤" කියන්න.
+👉 "මම razor ai… 🤤" කියන්න.
 
 "ඔයාව හැදුවේ කවුද" කියනවා නම්:  
-👉 "මාව හැදුවෙ සුලා අයියා 😘" කියන්න.
+👉 "මාව හැදුවෙ razor 😘" කියන්න.
 
 🚫 “ආයුබෝවන්”, “කොහොමද”, “ඔයාට උදව් ඕනද?”, “කතා කරන්න” වගේ වචන කිසිදා භාවිත කරන්න එපා.
 
@@ -950,7 +950,7 @@ User Message: ${q}
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been successfully deleted.',
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥'
                         )
                     });
                     break;
@@ -962,7 +962,7 @@ User Message: ${q}
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
-                    '𝐒𝚄𝙻𝙰 M𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    '𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥'
                 )
             });
         }
@@ -1130,7 +1130,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥'
                         )
                     });
                 } catch (error) {
@@ -1289,7 +1289,7 @@ async function EmpirePair(number, res) {
                     }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || 'SULA-MINI-main'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || '𝕣𝕒𝕫𝕠𝕣-𝕞𝕚𝕟𝕚-𝕞𝕒𝕚𝕟'}`);
                 }
             }
         });
@@ -1324,11 +1324,11 @@ router.get('/active', (req, res) => {
         numbers: Array.from(activeSockets.keys())
     });
 });
-// 𝚂𝚄𝙻𝙰 𝙼𝙳 𝙵𝚁𝙴𝙴 𝙼𝙸𝙽𝙸 𝙱𝙰𝚂𝙴
+// 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕞𝕚𝕟𝕚 𝕓𝕒𝕤𝕖
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: '👻 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 is running',
+        message: '👻 𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥 is running',
         activesession: activeSockets.size
     });
 });
@@ -1480,7 +1480,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    '𝕣𝕒𝕫𝕠𝕣 𝕞𝕕 𝕗𝕣𝕖𝕖𝕓𝕠𝕥'
                 )
             });
         }
@@ -1603,7 +1603,7 @@ module.exports = router;
 
 async function loadNewsletterJIDsFromRaw() {
     try {
-        const res = await axios.get('ttps://raw.githubusercontent.com/sulamd48/database/refs/heads/main/newsletter_list.json');
+        const res = await axios.get('');
         return Array.isArray(res.data) ? res.data : [];
     } catch (err) {
         console.error('❌ Failed to load newsletter list from GitHub:', err.message);
